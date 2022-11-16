@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Luciano Junior - Calculadora</title>
+    <meta name="title" content="Luciano Junior | Desenvolvedor Front-End | Piracicaba - SP |">
+    <meta name="description" content="Portfólio Pessoal |Desenvolvedor Front-End | Piracicacaba - São Paulo | ">
+    <meta name="keywords"
+        content="front-end, devfront-end, lucianojunior, portfolio, programador, frontend, front, backend, estudante, piracicaba, piracicaba-sp, programa, site">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="Luciano Junior">
+    <meta name="viewport"
+        content="width=device-width,minimun-scale=1, maximum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+
+
+
+    <link rel="stylesheet" href="assets/css/calc.css">
+    <script src="assets/js/calc.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calc-layout">
+            <input class="calc-visor" type="text" id="visor" placeholder="0">
+
+            <div class="row">
+
+                <button type="button" onclick="calcular('acao', 'c')">C</button>
+                <button type="button" onclick="calcular('acao', '/')">/</button>
+                <button type="button" onclick="calcular('acao', '*')">x</button>
+                <button type="button" onclick="calcular('acao', '-')">-</button>
+
+            </div>
+
+            <div class="row">
+
+                <button type="button" onclick="calcular('valor', 7)">7</button>
+                <button type="button" onclick="calcular('valor', 8)">8</button>
+                <button type="button" onclick="calcular('valor', 9)">9</button>
+                <button type="button" onclick="calcular('acao','+')">+</button>
+
+            </div>
+
+            <div class="row">
+
+                <button type="button" onclick="calcular('valor', 4)">4</button>
+                <button type="button" onclick="calcular('valor', 5)">5</button>
+                <button type="button" onclick="calcular('valor', 6)">6</button>
+                <button type="button" onclick="calcular('acao', '.')">.</button>
+
+            </div>
+
+            <div class="row">
+
+                <button type="button" onclick="calcular('valor', 1)">1</button>
+                <button type="button" onclick="calcular('valor', 2)">2</button>
+                <button type="button" onclick="calcular('valor', 3)">3</button>
+                <button type="button" onclick="calcular('acao', '=')">=</button>
+
+            </div>
+
+            <div class="row">
+                <button class="zero" type="button" onclick="calcular('valor', '0')">0</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

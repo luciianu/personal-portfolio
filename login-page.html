@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Luciano Junior - Página de Login</title>
+    <meta name="title" content="Luciano Junior | Desenvolvedor Front-End | Piracicaba - SP |">
+    <meta name="description" content="Portfólio Pessoal |Desenvolvedor Front-End | Piracicacaba - São Paulo | ">
+    <meta name="keywords"
+        content="front-end, devfront-end, lucianojunior, portfolio, programador, frontend, front, backend, estudante, piracicaba, piracicaba-sp, programa, site">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="Luciano Junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+
+
+    <link rel="stylesheet" href="assets/css/login-page.css">
+    <script src="assets/js/login-page.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="login-layout">
+                <nav>
+                    <div class="login-side">
+                        <div class="loading" id="loading">
+                            <div class="lds-ellipsis">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <form>
+                            <h2>Entrar</h2>
+                            <label for="nome">
+                                Nome de Usuário
+                            </label>
+                            <input type="text" name="name" id="name" required>
+
+                            <label for="senha">
+                                Senha
+                            </label>
+                            <input type="password" name="senha" id="senha" required>
+
+                            <div class="cb">
+                                <div class="check">
+                                    <input type="checkbox">
+                                    <p>Lembrar senha?</p>
+                                </div>
+                                <input type="submit" onclick="loading()" value="Entrar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="create-side">
+
+                        <div class="loading" id="loading2">
+                            <div class="lds-ellipsis1">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <h2>Cadastrar-se</h2>
+
+
+                        <form>
+                            <label for="nome">
+                                Nome de Usuário ou E-mail
+                            </label>
+                            <input type="text" name="nome" id="nome" required>
+                            <label for="senha">
+                                Senha
+                            </label>
+                            <input type="password" name="senha" id="senha" required>
+                            <label for="senha">
+                                Repita a senha
+                            </label>
+                            <input type="password" name="senha" id="senha" required>
+
+                            <div class="cb">
+                                <div class="check">
+                                    <input type="checkbox" required>
+                                    <p>Eu li e concordo com os Termos de Uso.</p>
+                                </div>
+                                <input onclick="loading2()" type="submit" value="Cadastrar">
+
+                            </div>
+                        </form>
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
